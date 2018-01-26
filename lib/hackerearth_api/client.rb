@@ -6,7 +6,7 @@ require_relative 'response'
 
 class Client
 	
-	attr_reader :client_secret_key
+	attr_accessor :client_secret_key
 	
 	def initialize(client_secret_key)
 		if client_secret_key == nil
