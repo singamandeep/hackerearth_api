@@ -7,7 +7,7 @@ A Ruby client for the official [Hackerearth API](https://www.hackerearth.com/doc
 Add this line to your application's Gemfile:
 
 ```ruby
-	gem 'hackerearth_api'
+gem 'hackerearth_api'
 ```
 
 And then execute:
