@@ -27,7 +27,7 @@ To start using gem, you can create a new client instance by passing the client_s
 ```
 
 ### Setting Parameters
-Since, the instance already has the client_secret you only need to pass rest of the parameters to make a request. 'source'(source code) and 'lang'(language) the required parameters for both the calls, not passing them will raise an ```ExceptionHandler::InvalidParameterException``` exception. 
+Since, the instance already has the client_secret you only need to pass rest of the parameters to make a request. 'source'(source code) and 'lang'(language) are the required parameters for both the calls, not passing them will raise an ```ExceptionHandler::InvalidParameterException``` exception. 
 
 To view the list of languages supported you can do as follows
 ```ruby
