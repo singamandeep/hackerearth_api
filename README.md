@@ -1,15 +1,13 @@
 # HackerearthApi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hackerearth_api`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A Ruby client for the official [Hackerearth API](https://www.hackerearth.com/docs/wiki/developers/v3/). Supports both the API endpoints. Can be used to compile and run code.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'hackerearth_api'
+	gem 'hackerearth_api'
 ```
 
 And then execute:
@@ -22,17 +20,47 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Creating a Instance
+To start using gem, you can create a new client instance by passing the client_secret to the constructor as
+```ruby
+	hacker = HackerearthApi.new("[your-client-secret]")
+```
 
-## Development
+### Setting Parameters
+Since, the instance already has the client_secret you only need to pass rest of the parameters to make a request. 'source'(source code) and 'lang'(language) the required parameters for both the calls, not passing them will raise an ```ExceptionHandler::InvalidParameterException``` exception. 
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+To view the list of languages supported you can do as follows
+```ruby
+	HackerearthApi.languages
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+'time_limit' and 'memory_limit' should be atmost 5 and 262144 respectively, any values greater than maximum value are set to the maximum value.  
+
+### Making a Request
+Now you can further make compile and run calls to the API as follows by passing the parameters mentioned in the API documentation, in the form of a hash.
+```ruby
+	hacker.compile({:source=>"puts('Hello World!')", :lang=>"RUBY"})
+
+	hacker.run({:source=>"puts('Hello World!')", :lang=>"RUBY"})	
+```
+
+### Response from API
+The result of both the calls is in the form of a ruby hash. 
+It will contain the response same as mentioned in the API documentation, along with another key in hash named "status", which will be the http status of the reponse.
+
+### Editing the Instance
+You can view or change the current objects client_secret
+```ruby
+	# To read
+	hacker.client_secret_key  
+	
+	# To change
+	hacker.client_secret= [new-client-secret]
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hackerearth_api.
+Bug reports and pull requests are welcome on GitHub at https://github.com/amandeep511997/hackerearth_api.
 
 ## License
 
