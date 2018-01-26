@@ -4,10 +4,6 @@ module Message
 		please register your client at 'https://www.hackerearth.com/api/register'"
 	end
 
-	def self.client_secret_invalid_length
-		"client_secret is of invalid length"
-	end
-
 	def self.source_nil
 		"source code is a required parameter"
 	end

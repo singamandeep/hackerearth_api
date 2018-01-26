@@ -12,10 +12,6 @@ class Client
 		if client_secret_key == nil
 			raise(ExceptionHandler::InvalidParameterException, Message.client_secret_nil)
 		end
-
-		if client_secret_key.length != 40
-			raise(ExceptionHandler::InvalidParameterException, Message.client_secret_invalid_length)
-		end
 		@client_secret_key = client_secret_key
 	end
 	

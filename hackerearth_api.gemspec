@@ -1,4 +1,3 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "hackerearth_api/version"
@@ -9,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Amandeep Singh"]
   spec.email         = ["amandeep511997@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Ruby library for the Hackerearth API.}
+  spec.homepage      = "https://github.com/amandeep511997/hackerearth_api"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
