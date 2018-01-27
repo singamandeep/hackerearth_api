@@ -6,6 +6,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gemspec
 
 group :metrics do
-  gem 'coveralls',      '~> 0.8.7', require: false
-  
+  gem 'coveralls', '~> 0.8.7', require: false
 end

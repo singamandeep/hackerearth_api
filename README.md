@@ -1,14 +1,15 @@
 # HackerearthApi
 [![Gem Version](https://badge.fury.io/rb/hackerearth_api.svg)][gem]
 [![Build Status](https://secure.travis-ci.org/amandeep511997/hackerearth_api.svg?branch=master)][travis]
-[![Code Climate](https://codeclimate.com/github/amandeep511997/hackerearth_api/badges/gpa.svg)][codeclimate]
-[![Dependency Status](https://beta.gemnasium.com/badges/github.com/amandeep511997/hackerearth_api.svg)][gemnasium]
+[![Maintainability](https://api.codeclimate.com/v1/badges/7b315b39ffc53300c155/maintainability)][maintainability]
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7b315b39ffc53300c155/test_coverage)][testcoverage]
+[![Dependency Status](https://gemnasium.com/badges/github.com/amandeep511997/hackerearth_api.svg)][gemnasium]
 
 [gem]: http://badge.fury.io/rb/hackerearth_api
 [travis]: https://travis-ci.org/amandeep511997/hackerearth_api
-[codeclimate]: https://codeclimate.com/github/amandeep511997/hackerearth_api
-[gemnasium]: https://beta.gemnasium.com/projects/github.com/amandeep511997/hackerearth_api
-
+[maintainability]: (https://codeclimate.com/github/amandeep511997/hackerearth_api/maintainability)
+[testcoverage]: (https://codeclimate.com/github/amandeep511997/hackerearth_api/test_coverage)
+[gemnasium]: https://gemnasium.com/projects/github.com/amandeep511997/hackerearth_api
 
 A Ruby client for the official [Hackerearth API](https://www.hackerearth.com/docs/wiki/developers/v3/). Supports both the API endpoints. Can be used to compile and run code.
 
