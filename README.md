@@ -1,4 +1,14 @@
 # HackerearthApi
+[![Gem Version](https://badge.fury.io/rb/hackerearth_api.svg)][gem]
+[![Build Status](https://secure.travis-ci.org/amandeep511997/hackerearth_api.svg?branch=master)][travis]
+[![Code Climate](https://codeclimate.com/github/amandeep511997/hackerearth_api/badges/gpa.svg)][codeclimate]
+[![Dependency Status](https://beta.gemnasium.com/badges/github.com/amandeep511997/hackerearth_api.svg)][gemnasium]
+
+[gem]: http://badge.fury.io/rb/hackerearth_api
+[travis]: https://travis-ci.org/amandeep511997/hackerearth_api
+[codeclimate]: https://codeclimate.com/github/amandeep511997/hackerearth_api
+[gemnasium]: https://beta.gemnasium.com/projects/github.com/amandeep511997/hackerearth_api
+
 
 A Ruby client for the official [Hackerearth API](https://www.hackerearth.com/docs/wiki/developers/v3/). Supports both the API endpoints. Can be used to compile and run code.
 
@@ -23,7 +33,7 @@ Or install it yourself as:
 ### Creating a Instance
 To start using gem, you can create a new client instance by passing the client_secret to the constructor as
 ```ruby
-	hacker = HackerearthApi.new("[your-client-secret]")
+hacker = HackerearthApi.new("[your-client-secret]")
 ```
 
 ### Setting Parameters
@@ -31,7 +41,7 @@ Since, the instance already has the client_secret you only need to pass rest of 
 
 To view the list of languages supported you can do as follows
 ```ruby
-	HackerearthApi.languages
+HackerearthApi.languages
 ```
 
 'time_limit' and 'memory_limit' should be atmost 5 and 262144 respectively, any values greater than maximum value are set to the maximum value.  
@@ -39,9 +49,9 @@ To view the list of languages supported you can do as follows
 ### Making a Request
 Now you can further make compile and run calls to the API as follows by passing the parameters mentioned in the API documentation, in the form of a hash.
 ```ruby
-	hacker.compile({:source=>"puts('Hello World!')", :lang=>"RUBY"})
+hacker.compile({:source=>"puts('Hello World!')", :lang=>"RUBY"})
 
-	hacker.run({:source=>"puts('Hello World!')", :lang=>"RUBY"})	
+hacker.run({:source=>"puts('Hello World!')", :lang=>"RUBY"})	
 ```
 
 ### Response from API
@@ -51,11 +61,11 @@ It will contain the response same as mentioned in the API documentation, along w
 ### Editing the Instance
 You can view or change the current objects client_secret
 ```ruby
-	# To read
-	hacker.client_secret_key  
+# To read
+hacker.client_secret_key  
 	
-	# To change
-	hacker.client_secret= [new-client-secret]
+# To change
+hacker.client_secret= [new-client-secret]
 ```
 
 ## Contributing

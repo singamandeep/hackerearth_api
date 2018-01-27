@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Amandeep Singh"]
   spec.email         = ["amandeep511997@gmail.com"]
 
-  spec.summary       = %q{Ruby library for the Hackerearth API.}
+  spec.summary       = %q{Ruby library for the Hackerearth API. Using HackerEarth API you can compile and run your code using their codeTable. }
   spec.homepage      = "https://github.com/amandeep511997/hackerearth_api"
   spec.license       = "MIT"
 
@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.required_ruby_version     = '>= 2.0.0'
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"

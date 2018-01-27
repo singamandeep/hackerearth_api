@@ -22,7 +22,3 @@ private
 		return response
 	end
 end
-
-=begin
-HTTParty.post("https://api.hackerearth.com/v3/code/compile/", body: { :client_secret=> "3905bf1332df91f3d9fc3b505dc18701ddae39a1", :source=> "puts('Hello World')", :lang=> "RUBY"})	
-=end
