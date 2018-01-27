@@ -4,6 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/7b315b39ffc53300c155/maintainability)][maintainability]
 [![Coverage Status](https://coveralls.io/repos/github/amandeep511997/hackerearth_api/badge.svg?branch=master)][coverall]
 [![Dependency Status](https://gemnasium.com/badges/github.com/amandeep511997/hackerearth_api.svg)][gemnasium]
+![](http://ruby-gem-downloads-badge.herokuapp.com/hackerearth_api?type=total)
 
 [gem]: http://badge.fury.io/rb/hackerearth_api
 [travis]: https://travis-ci.org/amandeep511997/hackerearth_api
