@@ -13,8 +13,6 @@
 [gemnasium]: https://gemnasium.com/projects/github.com/amandeep511997/hackerearth_api
 
 A Ruby client for the official [Hackerearth API](https://www.hackerearth.com/docs/wiki/developers/v3/). Supports both the API endpoints. Can be used to compile and run code. 
-<br /><br />
-*You can view usage docs at [here](https://amandeep511997.github.io/hackerearth_api/).*
 
 ## Installation
 
